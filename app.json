@@ -3,6 +3,9 @@
     "name": "snapnews",
     "slug": "snapnews",
     "version": "1.0.0",
+
+    "jsEngine": "hermes",
+
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,6 +18,7 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": ["INTERNET"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
