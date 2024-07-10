@@ -19,7 +19,6 @@ function Home() {
 
   const getTopHeadline = async () => {
     const result = (await GlobalApi.getTopHeadline).data;
-    // setNewsList(result.articles)
     setNewsList(result.articles.filter(article => article.urlToImage !== null));
   }
 
@@ -58,6 +57,7 @@ function Home() {
     </ScrollView>
   )
 }
+
 
 const styles = StyleSheet.create({
   appName: {
